@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <title> desprogramarse </title>
+	
+		<style>
+
+		.invertido:hover {
+   		 filter: invert(0.9);
+		}
+		body {
+		background-color: black;
+		font-family: monospace;
+		font-size: 30px;
+ 	 	background-image: url("img/loopcodigo.gif");
+		background-attachment: fixed;
+		background-position: 50% 50%;
+			}
+	
+		
+		#reloj { width: 500; font-size: 100px; text-align: center; color: #00FF30;}
+		</style>
+
+		<script>
+		function actual() {
+		         fecha=new Date(); //Actualizar fecha.
+		         hora=fecha.getHours(); //hora actual
+		         minuto=fecha.getMinutes(); //minuto actual
+		         segundo=fecha.getSeconds(); //segundo actual
+		         if (hora<10) { //dos cifras para la hora
+		            hora="0"+hora;
+		            }
+		         if (minuto<10) { //dos cifras para el minuto
+		            minuto="0"+minuto;
+		            }
+		         if (segundo<10) { //dos cifras para el segundo
+		            segundo="0"+segundo;
+		            }
+		         //ver en el recuadro del reloj:
+		         mireloj = hora+" : "+minuto+" : "+segundo;	
+						 return mireloj; 
+		         }
+		function actualizar() { //función del temporizador
+		   mihora=actual(); //recoger hora actual
+		   mireloj=document.getElementById("reloj"); //buscar elemento reloj
+		   mireloj.innerHTML=mihora; //incluir hora en elemento
+			 }
+		setInterval(actualizar,1000); //iniciar temporizador
+         </script>
+
+  </head>
+
+<body>
+  
+<br>
+<br>
+<br>
+<div id="reloj">
+   00 : 00 : 00
+  </div>
+
+ <div style="text-align: center;"> 
+ <img src="img/desprograme.gif" alt="DESPROGRAMAR" width="600px">
+</div>
+
+<div style="position: absolute; bottom: 10px; text-align: center;" class="invertido">
+  <a href="./amnesia.html">
+  <img src="img/reset.png" alt="reset" width="250px">
+  </a>
+  </div>
+
+  <div style="position: absolute; bottom: 40px; right:50px;" class="invertido">
+  <a href="./memoriacerebro.html">
+  <img src="img/ram.png" alt="memoria cerebro" width="250px">
+  </a>
+  </div>
+
+  </body>
+
+</html>

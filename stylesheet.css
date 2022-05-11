@@ -1,0 +1,117 @@
+.sueños {
+    background-image: url('img/cielo.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-color: #55A9EE;
+   }
+
+   .comprar {
+    background-image: url('img/contenidoliquido.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-color: #55A9EE;
+   }
+
+   .back-video {
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       z-index: -1;
+   }
+
+   body {
+    background-color: dimgray;
+  }
+  
+  h1 {
+    color: ghostwhite;
+    text-align: center;
+    font-family: Times new roman;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  
+  .popup1 {
+      background-color: transparent;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+      border-radius: 8px;
+      display: none;
+      text-align: center;
+  }
+  
+  .popup2 {
+      background-color: transparent;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 66%;
+      top: 44%;
+      border-radius: 8px;
+      display: none;
+      text-align: center;
+  }
+  
+  .popup1 button{
+      display: block;
+      background-color: dimgray;
+      font-size: 15px;
+      color: black;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      }
+  
+  .popup2 button{
+      display: block;
+      background-color: dimgray;
+      font-size: 15px;
+      color: black;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      }
+  
+  
+  img {max-width: 100%;
+      max-height: 100%;
+  }
+  
+  .contenedor{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    max-width: 640px;
+    max-height: 502px;
+  }
+  .balanza{
+  width: 640px;
+  height: 502px;
+  }
+  
+  .tiempoacelerado{
+    width: 130px;
+    position: absolute;
+    top:  46%;
+    left: 74%;
+  
+  }
+  .espaciodecontemplacion{
+    width: 150px;
+    position: absolute;
+    top:  48%;
+    left: 4%;
+  
+  }
+
+.divbtn {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
