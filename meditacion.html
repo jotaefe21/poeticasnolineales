@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <title>Meditación</title>
+  <title>meditacion</title>
 
-    <!-- CSS  -->
-   <link href="/stylesheet.css" rel="stylesheet" type="text/css" >
-   <!-- JavaScript Bundle with Popper --> 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   
+  <!-- CSS  -->
+  <link href="./stylesheet2.css" rel="stylesheet" type="text/css">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <audio autoplay loop>
+    <source src="sounds/meditacion.mp3" type="audio/mpeg">
+  </audio>
+
 </head>
 
 <body>
-  
-  <video autoplay loop muted plays-inline class="back-video">
-      <source src="img/cascada.mp4" type="video/mp4">
+  <video autoplay loop muted plays-inline class="bgdream">
+    <source src="img/meditacion.mp4" type="video/mp4">
   </video>
 
-  <div class="divbtn"> 
-    <button type="button" onclick="window.location.href='./nucleo.html'">Núcleo</button>
-    <button type="button" onclick="window.location.href='./amnesia.html'">Amnesia</button>
+  <div class="content2">
+    <div class="item1">
+      <a href="./amnesia.html">
+        <img src="img/tele.gif" width="174px" height="127px" alt="reset">
+      </a>
     </div>
 
-<!-- Footer -->
-<footer>
+    <div class="item3">
+      <iframe width="706" height="396" src="https://www.youtube.com/embed/pCpCyqBdbWk?controls=0&amp;start=7"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
 
- </footer>
+    <div class="item2">
+      <a href="./nucleo.html">
+        <img src="img/ojo.gif" width="233px" height="98px" alt="reset">
+      </a>
+    </div>
 
-<!-- End Footer -->
+  </div>
 
-<script src="js/script.js"></script>
 </body>
-
-
 
 </html>
