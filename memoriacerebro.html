@@ -4,8 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title> cerebro memoria </title>
+  <link rel="stylesheet" href="estilos.css">  
 
-  </head>
+    <audio autoplay loop>
+      <source src="sounds/epicproblem.mp3" type="audio/mpeg">
+    </audio>
 
   <style>
   body {
@@ -14,29 +17,74 @@
   font-size: 30px;
   background-color: black;
   background-image: url("img/cerebromem.gif");
-  background-size: 20%;
-  background-repeat: repeat-x;
+  background-size: 5%;
+  background-repeat: repeat-y 2;
   background-attachment: fixed;
   background-position: 50% 50%;
 
 }
 
+  .invertido:hover {
+       filter: invert(0.9);
+    }
+
+}
+
   </style>
+
+  <script>
+    function clickimg() {
+
+        if (document.getElementById("manipulacion").getAttribute('src')=='img/manipulacion.jpg')
+        { document.getElementById("manipulacion").src = 'img/manipulacion2.jpg';}
+
+      else if (document.getElementById("manipulacion").getAttribute('src') == 'img/manipulacion2.jpg')
+        { document.getElementById("manipulacion").src = 'img/manipulacion.jpg';}
+      }
+
+      function clickimg2() {
+
+        if (document.getElementById("tension").getAttribute('src')=='img/tension2.png')
+        { document.getElementById("tension").src = 'img/tension.jpg';}
+
+      else if (document.getElementById("tension").getAttribute('src') == 'img/tension.jpg')
+        { document.getElementById("tension").src = 'img/tension2.png';}
+      }
+
+  </script>
+
+
+</head>
   <body>
 
-  <h3 style="text-align:right;"> Todo lo que ves queda grabado en tu memoria </h3>
   
-
-  <div style="position: absolute; top: 20px; left: 20px;">
+  <div style="position: absolute; top: 30px; left: 40px;">
   <a href="./contenidoliquido.html">
-  <img src="img/ramliquido1.gif" alt="RAM LIQUIDIFICADA" width="350px">
+  <img src="img/liquid.gif" alt="liquido" width="150px">
+  </a>
+  </div>
+ 
+  <div style="position: absolute; bottom: 20px; right: 20px;"  class="invertido">
+  <img src="img/ramfuego2.gif" alt="RAM EN FUEGO" width="320px">
+  </div>
+
+  <div style="position: absolute; bottom: 25px; right: 25px;">
+  <a href="./desprogramarse.html">
+  <img  src="img/piramidalr.png" alt="piramide" height="100px"/>
   </a>
   </div>
 
-  <div style="position: absolute; bottom: 20px; right: 20px;">
-  <a href="./desprogramarse.html">
-  <img src="img/ramfuego2.gif" alt="RAM EN FUEGO" width="380px">
-  </a>
+
+  <div style="position: absolute; top: 300px; left: 30px;">
+  <video src="img/destroy.mp4" width="600" autoplay="loop"></video>
+  </div>
+
+  <div style="position: absolute; top: 300px; left: 30px;">
+  <img id="tension" src="img/tension2.png" alt="tension" onclick="clickimg2()" width="600"/>
+  </div>
+
+  <div style="position: absolute; top: 100px; right: 200px; text-align: center;">
+  <img id="manipulacion" src="img/manipulacion.jpg" alt="manipulacion" onclick="clickimg()" height="250px"/>
   </div>
 
 
