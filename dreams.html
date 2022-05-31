@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
 
     <title>Sueños</title>
 
     <!-- CSS only -->
-   <link href="/stylesheet.css" rel="stylesheet" type="text/css" >
-   <!-- JavaScript Bundle with Popper --> 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   
+    <link href="./stylesheet2.css" rel="stylesheet" type="text/css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer> function alertDream() {
+      alert("Esto es un sueño.");
+      } </script>
+    <audio autoplay loop>
+        <source src="sounds/viento.mp3" type="audio/mpeg">
+    </audio>
 </head>
 
-<body class="sueños">
-  
+<body class="bgimage">
+    <div class="content2">
 
-
-    <div class="divbtn"> 
-        <button type="button" onclick="window.location.href='./contemplacion.html'">Seguir contemplando</button>
-        <button type="button" onclick="window.location.href='./amnesia.html'">Amnesia</button>
-        <button type="button" onclick="window.location.href='./meditacion.html'">Meditar</button>
+        <div class="item4">
+            <a href="./meditacion.html">
+                <img src="img/ave.gif" alt="paloma">
+            </a>
+            <p class="centeredText">Liberar</p>
         </div>
 
+        <div class="item5">
+                <img src="img/video1.png" alt="reproductor de video">
+        </div>
 
-<!-- Footer -->
-<footer>
+        <div class="item6">
+            <a href="./contemplacion.html">
+                <img src="img/video2.png" alt="reproductor de video">
+            </a>
+        </div>
 
- </footer>
+        <div class="contentBottomLeft">
+            <p class="centeredText">Esto es una frase de ejemplo que voy a utilizar.</p>
+        </div>
 
-<!-- End Footer -->
+        <div class="item8">
+            <a href="./amnesia.html">
+                <img src="img/cd.gif" width="103px" height="103px"  alt="cd">
+            </a>
+            <p class="centeredText">Escapar</p>
+        </div>
 
-<script src="js/script.js"></script>
+    
+        
+
+    </div>
+
 </body>
 
-
+<!--Script-->
 
 </html>
