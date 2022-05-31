@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="es">
-
   <head>
     <meta charset="utf-8">
     <title> desprogramarse </title>
+     <link rel="stylesheet" href="estilos.css">  
+
+     	<audio autoplay loop>
+    	<source src="sounds/alienigena.mp3" type="audio/mpeg">
+		</audio>
 	
 		<style>
-
+	
 		.invertido:hover {
    		 filter: invert(0.9);
 		}
@@ -15,12 +19,13 @@
 		font-family: monospace;
 		font-size: 30px;
  	 	background-image: url("img/loopcodigo.gif");
-		background-attachment: fixed;
-		background-position: 50% 50%;
+ 	 	background-size: 50px;
 			}
 	
 		
-		#reloj { width: 500; font-size: 100px; text-align: center; color: #00FF30;}
+		#reloj {font-size: 70px; text-align: center; color: #00FF30;}
+
+
 		</style>
 
 		<script>
@@ -48,35 +53,90 @@
 		   mireloj.innerHTML=mihora; //incluir hora en elemento
 			 }
 		setInterval(actualizar,1000); //iniciar temporizador
-         </script>
+       
+
+
+   		function clickimg() {
+
+        if (document.getElementById("piramidal").getAttribute('src')=='img/piramidal.png')
+        { document.getElementById("piramidal").src = 'img/piramidal1.png';}
+
+    	else if (document.getElementById("piramidal").getAttribute('src') == 'img/piramidal1.png')
+       	{ document.getElementById("piramidal").src = 'img/piramidal.png';}
+     	}
+
+     	function clickimg2() {
+
+        if (document.getElementById("piramidal2").getAttribute('src')=='img/piramidal.png')
+        { document.getElementById("piramidal2").src = 'img/piramidal2.png';}
+
+    	else if (document.getElementById("piramidal2").getAttribute('src') == 'img/piramidal2.png')
+       	{ document.getElementById("piramidal2").src = 'img/piramidal.png';}
+     	}
+
+     	function clickimg3() {
+
+        if (document.getElementById("piramidal3").getAttribute('src')=='img/piramidala.png')
+        { document.getElementById("piramidal3").src = 'img/piramidal3.png';}
+
+    	else if (document.getElementById("piramidal3").getAttribute('src') == 'img/piramidal3.png')
+       	{ document.getElementById("piramidal3").src = 'img/piramidala.png';}
+     	}
+
+    
+
+
+    </script>
+
+		
 
   </head>
 
 <body>
-  
-<br>
-<br>
-<br>
-<div id="reloj">
+
+
+<div style="text-align: center;"> 
+ <img src="img/desprograme.gif" alt="DESPROGRAMAR" width="550px">
+</div>
+
+<div id="reloj" >
    00 : 00 : 00
   </div>
 
- <div style="text-align: center;"> 
- <img src="img/desprograme.gif" alt="DESPROGRAMAR" width="600px">
+ 
+
+<div style="position: absolute; bottom: 30px; left: 20px; text-align: center;">
+<img id="piramidal" src="img/piramidal.png" alt="piramide" onclick="clickimg()" width="550px"/>
 </div>
 
-<div style="position: absolute; bottom: 10px; text-align: center;" class="invertido">
-  <a href="./amnesia.html">
-  <img src="img/reset.png" alt="reset" width="250px">
+<div style="position: absolute; bottom: 10px; left: 480px; text-align: center;">
+<img id="piramidal2" src="img/piramidal.png" alt="piramide" onclick="clickimg2()" width="300px"/>
+</div>
+
+<div style="position: absolute; top: 150px; right:20px; text-align: center;">
+<img id="piramidal3" src="img/piramidala.png" alt="piramide" onclick="clickimg3()" width="300px"/>
+</div>
+
+<div style="position: absolute; bottom: 20px; right:20px;">
+  <img src="img/tele.gif" alt="reset" width="450px">
+  </div>
+
+<div style="position: absolute; bottom: 20px; right:20px;" class="invertido">
+  <a href="amnesia.html">
+  <img src="img/reset.png" alt="reset" width="150px">
   </a>
   </div>
 
-  <div style="position: absolute; bottom: 40px; right:50px;" class="invertido">
-  <a href="./memoriacerebro.html">
-  <img src="img/ram.png" alt="memoria cerebro" width="250px">
+  <div style="position: absolute; top: 10px; text-align: center;" class="invertido">
+  <a href="memoriacerebro.html">
+  <img src="img/ram.png" alt="memoria cerebro" width="150px">
   </a>
   </div>
 
-  </body>
+
+	
+
+
+</body>
 
 </html>
