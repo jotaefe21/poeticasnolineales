@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <title>Contemplación</title>
+  <title>Contemplación</title>
 
-    <!-- CSS  -->
-   <link href="/stylesheet.css" rel="stylesheet" type="text/css" >
-   <!-- JavaScript Bundle with Popper --> 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- CSS  -->
+  <link href="./stylesheet2.css" rel="stylesheet" type="text/css">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
    
+    </script>
+  <audio autoplay loop>
+    <source src="sounds/olas.mp3" type="audio/mpeg">
+  </audio>
+
 </head>
 
 <body>
-  
-  <video autoplay loop muted plays-inline class="back-video">
-      <source src="img/mar.mp4" type="video/mp4">
+  <video autoplay loop muted plays-inline class="bgdream">
+    <source src="img/mar.mp4" type="video/mp4">
   </video>
 
-  <div class="divbtn"> 
-  <button type="button" onclick="window.location.href='./dreams.html'">Sueños</button>
+ <!-- <canvas id="canvas" class="bgContemplate" width="32" height="32"></canvas> -->
+
+  <div class="content">
+    <div class="ser" id="ser1" onclick='changeImage()'>
+      <span style="--clr:#fbad04;--i:18px; --d:2.5s;"> </span>
+      <span style="--clr:#03a1f9;--i:13px; --d:5s;"> </span>
+      <span style="--clr:#f7036d;--i:13px; --d:7s;"> </span>
+      <span style="--clr:#93ff16;--i:13px; --d:10s;"> </span>
+    </div>
   </div>
 
-<!-- Footer -->
-<footer>
 
- </footer>
 
-<!-- End Footer -->
+  <div class="contentBottom">
+    <div>
+      <a class="centeredText" href="./dreams.html">"Todo lo que vemos esconde otra cosa, <br> siempre queremos ver lo
+        que esta escondido detrás de lo que vemos."</a>
+    </div>
 
-<script src="js/script.js"></script>
+  </div>
+
+
+
+  <script src="script.js"></script>
 </body>
 
 
