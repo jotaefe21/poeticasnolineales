@@ -5,35 +5,116 @@
     <meta charset="utf-8">
     <title> amnesia </title>
     <link rel="stylesheet" href="estilos.css">  
-  </head>
+
+    <audio autoplay loop>
+      <source src="sounds/viento.mp3" type="audio/mpeg">
+    </audio>
+
 
   <style>
   body {
-  background-image: url("img/fondophotoshop.png");
-  background-size: 500px;
-	}
-  .invertido:hover {
-    filter: invert(0.9);
+  background-image: url("img/recorrido.gif");
+  background-size: 110%;
+
+}
+
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
   </style>
+
+
+  <script>
+    function clickimg() {
+
+        if (document.getElementById("pocion").getAttribute('src')=='img/pocion.png')
+        { document.getElementById("pocion").src = 'img/pocion2.png';}
+
+      else if (document.getElementById("pocion").getAttribute('src') == 'img/pocion2.png')
+        { document.getElementById("pocion").src = 'img/pocion.png';}
+      }
+    function clickimg2() {
+
+        if (document.getElementById("huevo").getAttribute('src')=='img/huevo.png')
+        { document.getElementById("huevo").src = 'img/huevo2.png';}
+
+      else if (document.getElementById("huevo").getAttribute('src') == 'img/huevo2.png')
+        { document.getElementById("huevo").src = 'img/huevo.png';}
+      }
+
+      function clickimg3() {
+
+        if (document.getElementById("mano").getAttribute('src')=='img/mano.jpg')
+        { document.getElementById("mano").src = 'img/olvido.gif';}
+
+      else if (document.getElementById("mano").getAttribute('src') == 'img/olvido.gif')
+        { document.getElementById("mano").src = 'img/mano.jpg';}
+      }
+  </script>
+</head>
+
+
   <body>
 
-  <div class="invertido" style="text-align: center;">
+  <div style="position: absolute; bottom: 10px; left:25px; text-align: center;" class="parpadea text">
   <a href="./dreams.html">
-  <img src="img/sueño.png" alt="SUEÑOS" width="400px">
+  <img src="img/sueño.png" alt="SUEÑOS" width="300px">
   </a>
   </div>
   <br>
-  <div class="invertido" style="text-align: center;">
+  <div style="position: absolute;top: 30px; left:60px; text-align: center;">
   <a href="./index.html">
-  <img src="img/salida.png" alt="SALIDA" width="400px">
+  <img src="img/loophole.gif" alt="SALIDA" width="230px">
   </a>
   </div>
   <br>
-  <div class="invertido" style="text-align: center;">
+  <div style="position: absolute;top: 10px; left:25px; text-align: center;">
   <a href="./memoriacerebro.html">
-  <img src="img/memoria.png" alt="MEMORIA" width="400px">
+  <img src="img/pendrive.png" alt="MEMORIA" width="150px">
   </a>
+  </div>
+
+  <div style="position: absolute;top: 160px; left:90px; text-align: center;">
+  <video src="img/hielo.mp4" width="600" controls></video>
+  </div>
+
+
+  <div style="position: absolute; bottom: 30px; right: 40px; text-align: center;">
+  <img id="pocion" src="img/pocion.png" alt="pocion" onclick="clickimg()" height="230px"/>
+  </div>
+
+  <div style="position: absolute; bottom: 100px; right: 370px; text-align: center;" >
+  <img id="huevo" src="img/huevo.png" alt="huevo" onclick="clickimg2()" width="300px"/>
+  </div>
+
+   <div style="position: absolute; top: 30px; right: 100px; text-align: center;">
+  <img id="mano" src="img/mano.jpg" alt="mano" onclick="clickimg3()" width="300px"/>
   </div>
 
 
