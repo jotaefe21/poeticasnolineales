@@ -1,8 +1,8 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
  <link rel="stylesheet" href="estilos.css">
 <html>
 <head>
-<script src="https://raw.githack.com/jotaefe21/poeticasnolineales/main/p5.js"></script>
+<script src="p5.js"></script>
 <title>punto de no retorno</title>
    <audio autoplay loop>
   <source src="sounds/error.wav" type="audio/wav">
@@ -17,19 +17,17 @@
 
 function preload() {
     imagenes[0] = loadImage('img/noHayRetorno1.jpg');
-    imagenes[1] = loadImage('img/noHayRetorno2.jpg');
-    imagenes[2] = loadImage('img/quieroSalir1.jpg');
+    imagenes[1] = loadImage('img/quieroSalir1.jpg');
+    imagenes[2] = loadImage('img/noHayRetorno2.jpg');
     imagenes[3] = loadImage('img/quieroSalir2.jpg');
 }
 
-
 function setup() {
   createCanvas(1366, 768);
-  background(51);
 }
 
 function draw() {
-  image(imagenes[0], 50,50);
+  image(imagenes[0], width/2 -200 ,height/2 -200);
 
 }
 
@@ -38,9 +36,9 @@ function mouseClicked() {
          var randomXPos = random(0,width); 
          var randomYPos = random(0,height);
          console.log(i);
-         image (imagenes[i], randomXPos, randomYPos);
-       
+         image (imagenes[i], randomXPos-100, randomYPos-100);
      }
+
      
 }
 
