@@ -4,17 +4,30 @@
   <head>
     <meta charset="utf-8">
     <title> desintoxicate ya </title>
-  </head>
+    <link rel="stylesheet" href="estilos.css">  
+
+    <audio autoplay loop>
+      <source src="sounds/blade.mp3" type="audio/mpeg">
+    </audio>
+
 
   <style>
 
 
   body {
   background-color: red;
+  background-image: url("img/codigox.gif");
+  background-size: 100%;
   font-family: monospace;
   font-size: 30px;
 	}
 
+  .saturado:hover {
+   filter: saturate(10);
+   }
+
+
+}
   .text {
   font-size:28px;
   font-family:helvetica;
@@ -53,21 +66,52 @@
   100% { opacity: 1.0; }
 }
   </style>
-  <body>
 
-  <div class="parpadea text" style="text-align: center; margin-top: 100px;">
+    <script>
+    function clickimg() {
+
+        if (document.getElementById("welcome").getAttribute('src')=='img/welcome.jpg')
+        { document.getElementById("welcome").src = 'img/welcome2.jpg';}
+
+      else if (document.getElementById("welcome").getAttribute('src') == 'img/welcome2.jpg')
+        { document.getElementById("welcome").src = 'img/welcome.jpg';}
+      }
+
+    function playaudio(){
+      var audio = new Audio('sounds/eyvos.mp3');
+      audio.play();
+    }
+
+  </script>
+
+</head>
+  <body>
+  <div class="parpadea text" style="text-align: center; margin-top: 50px;">
   <a href="certificado.html">
   <img src="img/desintoxicate.png" alt="DESINTOXICATE YA!" width="1300px">
   </a>
   </div>
-  <div style="color:yellow; font-size: 50px;text-align: center;">
-  <p> OFERTA POR TIEMPO LIMITADO <br> ¡CONVERTITE EN UN SER ELEVADO! <br> ¡¡¡NO TE PIERDAS ESTA OPORTUNIDAD UNICA!!!</p>
 
-  <br>
-  <div style="position: absolute;right:10px;bottom: 5px;">
+  <div style="color: white; font-size: 30px; text-align: right; position: absolute; bottom: 5px; right: 110px;">
+  <p> OFERTA POR TIEMPO LIMITADO <br> ¡CONVERTITE EN UN SER ELEVADO! <br> ¡¡¡NO TE PIERDAS ESTA OPORTUNIDAD UNICA!!!</p>
+ </div>
+
+  <div style="position: absolute; right:110px; bottom:180px; text-align: center;">
+  <img id="welcome" src="img/welcome.jpg" alt="welcome" onclick="clickimg()" height="290px"/>
+  </div>
+
+
+  <div style="position: absolute; bottom: 20px; left: 70px; text-align: center;" class="saturado">
+  <img id="carita" src="img/carita.gif" alt="carita" onclick="playaudio()" height="330px"/>
+  </div>
+
+
+  <div style="position: absolute;right:10px;top: 5px;">
   <a href="desprogramarse.html">
-  <img src="img/minidesprogramar.png" alt="DESPROGRAMARSE" width="100px">
+  <img src="img/minidesprogramar.png" alt="DESPROGRAMARSE" width="160px">
   </a>
+
+
 
 
 
