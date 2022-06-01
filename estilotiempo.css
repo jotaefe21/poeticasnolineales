@@ -1,6 +1,14 @@
 body{
-	background-color: black;
+    background: #000000;
+    width: 1366px;
+    height: 768px;
+}
+
+/*TIEMPO ACELERADO * TIEMPO ACELERADO * TIEMPO ACELERADO */
+#timebg{
 	background-image: url("img/tiempofondo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #persona{
@@ -37,8 +45,103 @@ body{
     border-radius: 40px;
 }
 
-
 .hidden{
 	display: none;
 }
 
+/*TIEMPO ACELERADO * TIEMPO ACELERADO * TIEMPO ACELERADO */
+
+ /* OFERTA * OFERTA * OFERTA * OFERTA * OFERTA */
+
+ #ofertabg{ 
+    background-image: url("img/fondooferta.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+#contenedor{
+    width: 1366px;
+    height: 768px;
+    margin:auto; 
+}
+.cerrar{
+    position: absolute;
+    border: none;
+    border-radius: 10%;
+    top: 25px;
+    right: 210px;
+    width: 170px;
+    padding:1px;
+    text-align: center;
+    margin: 1px ;
+    cursor: pointer;
+}
+.cerrar:hover{
+    background-color:#443C5E;
+}
+section{
+    display: inline;
+    width: auto;
+}
+#publi{
+    text-align: center;
+}
+#oferta{
+    position: absolute;
+    width: 80%;
+    top: 20px;
+    left: 400px;
+    max-width: 550px;
+    margin-top: 5px;
+    margin:auto; 
+    padding:13px;
+}
+.compra{
+    position: absolute;
+    top: 440px;
+    left: 425px;
+    width: 322px;
+    height: 145px;
+    cursor: pointer;
+}
+#loto{
+    position: absolute;
+    bottom: 80px;
+    left: 180px;
+    width: 200px;
+    filter: blur(5px);
+}
+#loto:hover{
+    filter: none;
+}
+
+ /* OFERTA * OFERTA * OFERTA * OFERTA * OFERTA */
+
+ /*GALAXIA * GALAXIA * GALAXIA * GALAXIA * GALAXIA */
+ #galaxiabg{
+    background-image: url("img/galaxia1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#celula{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 270px;
+    height: 110px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#memoria{
+    position: absolute;
+    top: 400px;
+    right: 30px;
+    width: 270px;
+    height: 110px;
+    text-align: center;
+    cursor: pointer;
+}
+ /*GALAXIA * GALAXIA * GALAXIA * GALAXIA * GALAXIA */
