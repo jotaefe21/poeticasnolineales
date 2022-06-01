@@ -135,6 +135,44 @@ body {
     outline: none;
     cursor: pointer;
     }
+.popup5 button{
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+
+.popup6 button{
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+.popup7 button{
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+
+.popup8 button{
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
 
 
 
