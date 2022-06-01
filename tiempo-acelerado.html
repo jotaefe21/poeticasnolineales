@@ -3,18 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<title>tiempo acelerado</title>
+	<link href="estilotiempo.css" rel="stylesheet">
 </head>
-<body style="background-color: black">
-	<div style="text-align: center;">
-		<a href="./oferta.html">
-			<img src="img/hombre.jpg" alt="hombre">
+<body>
+	<div>
+		<a href="oferta.html">
+			<img src="img/person.gif" alt="persona" id="persona">
 		</a>
+		
 		<a href="contenidoliquido.html">
-			<img src="img/tiempo.jpg" alt="tiempo">
+			<div>
+			<img src="img/tiempo.gif" alt="tiempo" id="tiempo">
+			</div>
 		</a>
-		<a href="./memoriacerebro.html">
-			<img src="img/mujer.jpg" alt="mujer">
+		<div>
+			<img src="img/todotetrajo.png" alt="story" id="story" class="story">
+		</div>
+		<video src="img/alien.mp4" id="storyVideo" class="story hidden"></video>
+		<a href="#" onclick="cambiarImagen()" id="link">
+		<img src="img/celular.png" alt="celular" id="celular">
 		</a>
+		
 	</div>
+	<script type="text/javascript">
+		function cambiarImagen(){
+			var story = document.getElementById("story");
+			var storyVideo = document.getElementById("storyVideo")
+			if (!story.classList.contains("hidden") && story.src.includes("img/todotetrajo.png"))  {
+				storyVideo.classList.toggle("hidden");
+				story.classList.toggle("hidden");
+				storyVideo.play();
+			}
+			else if (story.classList.contains("hidden") && story.src.includes("img/todotetrajo.png")) {
+				storyVideo.classList.toggle("hidden");
+				story.classList.toggle("hidden");
+				story.src = "img/abundancia.png";
+				storyVideo.pause();
+			}
+			else if (!story.classList.contains("hidden") && story.src.includes("img/abundancia.png")) {
+				storyVideo.classList.toggle("hidden");
+				story.classList.toggle("hidden");
+				storyVideo.src = "img/abundancia_2.mp4";
+				storyVideo.play();
+			}
+			else if (story.classList.contains("hidden") && story.src.includes("img/abundancia.png")) {
+				storyVideo.classList.toggle("hidden");
+				story.classList.toggle("hidden");
+				story.src = "img/dinero.png";
+				storyVideo.pause();
+			}
+			else if (!story.classList.contains("hidden") && story.src.includes("img/dinero.png")) {
+				storyVideo.classList.toggle("hidden");
+				story.classList.toggle("hidden");
+				storyVideo.src = "img/dieta.mp4";
+				storyVideo.play();
+			}
+			else if (storyVideo.src.includes("img/dieta.mp4")) {
+				storyVideo.src = "img/promo.mp4";
+				storyVideo.play();
+				//var link = document.getElementById ("link");
+				//link.href = "todoloqueves.html";
+			}
+			else if (storyVideo.src.includes("img/promo.mp4")) {
+				var link = document.getElementById ("link");
+				link.href = "memoriacerebro.html";
+				storyVideo.pause();
+			}
+
+		}
+	</script>
 </body>
 </html>

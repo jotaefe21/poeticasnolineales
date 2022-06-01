@@ -5,16 +5,21 @@
 		<title>galaxia</title>
 		<link href="estilogal.css" rel="stylesheet">
 	</head>
-	<body style="background-color: black">
+	<body id="cuerpo">
+		<a href="nucleo.html" id="celula">
+			<img src="img/celula.gif" alt="celula" width="300px">
+		</a>
+		<a href="index.html" id="memoria">
+			<img src="img/ramliquido1.gif" alt="ram" width="200px">
+		</a>
+		<script type="text/javascript">
+			var celula = document.getElementById("celula");
+			celula.style.top = Math.random()*430+20 +"px";
+			celula.style.left = Math.random()*270+30 +"px";
+			var ram = document.getElementById("memoria");
+			ram.style.top = Math.random()*430+20 +"px";
+			ram.style.right = Math.random()*355+5 +"px";
+		</script>
 		
-		<a href="nucleo.html">
-			<button class="linea" id="nucleo"><strong>nucleo</strong></button>
-			</section>
-		</a>
-		<a href="index.html">
-			<button class="linea" id="index"><strong>regreso</strong></button>
-			</section>
-		</a>
-		<img src="img/galaxia.jpg" alt="galaxia" width="100%">
 	</body>
 </html>
