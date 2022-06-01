@@ -1,36 +1,26 @@
-#nucleo{
-	background-color: grey; 
+body{
+    background-color: black;
+    background-image: url("img/galaxia1.jpg");
+    background-size: 1370px 730px;
+}
+
+
+#celula{
 	position: absolute;
-    bottom: 200px ;
-    margin-left: 65px;
+    top: 100px;
+    left: 30px;
     width: 270px;
     height: 110px;
-    border: 3px solid purple;
-    padding: 15px 20px;
     text-align: center;
-    font-weight: bold;
-    font-size: 30px;
     cursor: pointer;
 }
-#nucleo:hover{
-	background-color:#443C5E;
-	color: white;
-}
-#index{
-    background-color: grey; 
+
+#memoria{
     position: absolute;
-    bottom: 200px ;
-    margin-left: 990px;
+    top: 400px;
+    right: 30px;
     width: 270px;
     height: 110px;
-    border: 3px solid purple;
-    padding: 15px 20px;
     text-align: center;
-    font-weight: bold;
-    font-size: 30px;
     cursor: pointer;
-}
-#index:hover{
-    background-color:#443C5E;
-    color: white;
 }

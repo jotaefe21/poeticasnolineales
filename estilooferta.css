@@ -1,22 +1,29 @@
 body{
-	background-color:#a3b18a; 
-	
+	background-color:black; 
+	background-image: url("img/fondooferta.gif");
+
 }    
 /*display: inline-block;*/
-#cerrar{
-	background-color: grey;
+
+#contenedor{
+	width: 1366px;
+	height: 768px;
+	margin:auto; 
+}
+.cerrar{
+	position: absolute;
     border: none;
-    padding: 15px 20px;
+    border-radius: 10%;
+    top: 25px;
+    right: 210px;
+    width: 170px;
+    padding:1px;
     text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-    /*margin: 4px 2px;*/
+    margin: 1px ;
     cursor: pointer;
 }
-#cerrar:hover{
+.cerrar:hover{
 	background-color:#443C5E;
-	color: white;
 }
 section{
 	display: inline;
@@ -25,28 +32,31 @@ section{
 #publi{
 	text-align: center;
 }
-img{
+#oferta{
+	position: absolute;
 	width: 80%;
+	top: 20px;
+	left: 400px;
 	max-width: 550px;
-	/*margin-top: 10px; */
+	margin-top: 5px;
 	margin:auto; 
 	padding:13px;
 }
-#compra{
-	background-color: grey; 
+.compra{
 	position: absolute;
-    bottom: 5px ;
-    margin-left: 420px;
-    width: 270px;
-    height: 110px;
-    border: 3px solid purple;
-    padding: 15px 20px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
+	top: 440px;
+    left: 425px;
+    width: 322px;
+    height: 145px;
     cursor: pointer;
 }
-#compra:hover{
-	background-color:#443C5E;
-	color: white;
+#loto{
+    position: absolute;
+    bottom: 80px;
+    left: 180px;
+    width: 200px;
+    filter: blur(5px);
+}
+#loto:hover{
+	filter: none;
 }
