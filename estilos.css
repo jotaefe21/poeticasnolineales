@@ -211,6 +211,9 @@ img {max-width:100%;
     position: relative;
     size: inherit;
     background-color: black;
+    position: fixed;
+    size: inherit;
+    overflow: hidden;
 }
 /*NO RETORNO NO RETORNO NO RETORNO NO RETORNO NO RETORNONO RETORNO NO RETORNO */
 
