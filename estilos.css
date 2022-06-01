@@ -10,13 +10,13 @@ body {
   background-color: black;
 }
 
-  /*INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
+ /*INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
 .popup1 {
 
     position: absolute;
     transform: translate(-50%,-50%);
     left: 30%;
-    top: 20%;
+    top: 50%;
     border-radius: 8px;
     display: none;
     text-align: center;
@@ -27,11 +27,33 @@ body {
     position: absolute;
     transform: translate(-50%,-50%);
     left: 25%;
-    top: 10%;
+    top: 30%;
     border-radius: 8px;
     display: none;
     text-align: center;
 }
+.popup3 {
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 60%;
+    top: 70%;
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+}
+
+.popup4 {
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 70%;
+    top: 25%;
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+}
+
 
 .popup1 button{
     display: block;
@@ -52,33 +74,55 @@ body {
     outline: none;
     cursor: pointer;
     }
+.popup3 button{
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+
+.popup4 button{
+    display: block;
+    background-color: transparent;
+    font-size: 15px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
 
 
-img {max-width: 100%;
+
+img {max-width:100%;
     max-height: 100%;
 }
+
 
 .contenedor{
   position: relative;
   text-align: center;
   margin: auto;
-  max-width: width/2;
-  max-height: height/2;
+  width: inherit;
+  height: inherit;
   background-color: transparent;
+
 }
 
 .tiempoacelerado{
   width: 250px;
   position: absolute;
-  top:  44%;
-  left: 55%;
+  top:  35%;
+  left: 58%;
 
 }
 .espaciodecontemplacion{
   width: 250px;
   position: absolute;
-  top:  44%;
-  left: 35%;
+  top:  38%;
+  left: 24%;
 }
 /*INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
 /*NO RETORNO NO RETORNO NO RETORNO NO RETORNO NO RETORNONO RETORNO NO RETORNO */
