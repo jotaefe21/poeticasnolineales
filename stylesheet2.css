@@ -149,9 +149,9 @@ canvas {
 }
   
 .item13{
-    position: relative;
+    position: absolute;
     top: 10%;
-    left: 2%;
+    right: 2%;
 }
 
   .contentBottom {
@@ -254,4 +254,19 @@ canvas {
     height: 461px;
     background: url("img/ser.png") no-repeat;
     cursor: pointer;
+  }
+
+
+  .compreya {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    animation: moveRight 5s linear infinite;
+  }
+
+  /* Animacion */
+
+  @keyframes moveRight{
+      100%{transform: translateX(1800px)}
   }
