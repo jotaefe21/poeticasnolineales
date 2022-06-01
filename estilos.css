@@ -78,5 +78,57 @@ img {max-width: 100%;
   left: 35%;
 }
 /*INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
+/*NO RETORNO NO RETORNO NO RETORNO NO RETORNO NO RETORNONO RETORNO NO RETORNO */
+
+.contenedorP5{
+    position: relative;
+    size: inherit;
+    background-color: black;
+}
+/*NO RETORNO NO RETORNO NO RETORNO NO RETORNO NO RETORNONO RETORNO NO RETORNO */
+
+/*NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO */
+.contenedorManos{
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: inherit;
+  height: inherit;
+  background-color: transparent;
+}
+
+
+#manos {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    animation-name: opManos;
+    animation-duration: 60s;
+    opacity: 0.85;
+}
+@keyframes opManos {
+    from {opacity: 0;}
+    to {opacity: 0.85;}
+    from {width: 10%;}
+    to {width: 50%;}
+    from {height: 10%;}
+    to {height: 50%;}
+}
+
+.contenedorTextoNucleo{
+    font-family: monospace;
+    position: absolute;
+    text-align: center;
+    top: 74%;
+    left: 68%;
+    }
+
+.contenedorVideo{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    }
+/*NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO NUCLEO */
 
   </style>
