@@ -10,7 +10,53 @@
   <link href="./stylesheet2.css" rel="stylesheet" type="text/css">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+  <script>
+    let c = document.getElementById('canvas')
+    let $ = c.getContext('2d')
+
+    let col = function (x, y, r, g, b) {
+      $.fillStyle = "rgb(" + r + ", " + g + "," + b + " )"
+      $.fillRect(x, y, 1, 1)
+    }
+
+    let R = function (x, y, t) {
+      return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t)))
+    }
+
+    let G = function (x, y, t) {
+      return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)))
+    }
+
+    let B = function (x, y, t) {
+      return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(t / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100)))
+    }
+
+    let t = 0
+
+    let run = function () {
+      for (x = 0; x <= 35; x++) {
+        for (y = 0; y <= 35; y++) {
+          col(x, y, R(x, y, t), G(x, y, t), B(x, y, t))
+        }
+      }
+      t = t + 0.080
+      window.requestAnimationFrame(run)
+    }
+
+    run()
+
+    function changeImage() {
+      document.getElementById("ser1").className = "energy";
+
+    }
+
+    function changeImage2() {
+      document.getElementById("atomo").className = "butterfly";
+
+    }
+
+
+  </script>
   <audio autoplay loop>
     <source src="sounds/olas.mp3" type="audio/mpeg">
   </audio>
@@ -22,71 +68,39 @@
     <source src="img/mar.mp4" type="video/mp4">
   </video>
 
- <!-- <canvas id="canvas" class="bgContemplate" width="32" height="32"></canvas> -->
+  <!-- <canvas id="canvas" class="bgContemplate" width="32" height="32"></canvas> -->
 
   <div class="content">
+    <div class="item14">
+  
+          <img src="img/adn.gif"   alt="adn">
+  </div>
+
     <div class="ser" id="ser1" onclick='changeImage()'>
       <span style="--clr:#fbad04;--i:18px; --d:2.5s;"> </span>
       <span style="--clr:#03a1f9;--i:13px; --d:5s;"> </span>
       <span style="--clr:#f7036d;--i:13px; --d:7s;"> </span>
       <span style="--clr:#93ff16;--i:13px; --d:10s;"> </span>
     </div>
+
+    <div class="item15">
+
+          <img src="img/inicio.gif" width="103px" height="103px"  alt="espermatozoide">
+  </div>
+
   </div>
 
 
 
   <div class="contentBottom">
-    <div>
-      <a class="centeredText" href="./dreams.html">"Todo lo que vemos esconde otra cosa, <br> siempre queremos ver lo
-        que esta escondido detrás de lo que vemos."</a>
-    </div>
-
+    <a class="centeredText" href="./dreams.html" style="font-size: 12px;">"“El mundo real está más allá de nuestros
+      pensamientos e ideas; <br> lo vemos a través de la red de nuestros deseos, <br> dividido entre dolor y placer, bueno y
+      malo, interno y externo. <br> Para ver el universo como es uno tiene que situarse más allá de la red. <br> No es
+      difícil hacerlo porque la red está llena de agujeros.”"</a>
   </div>
 
-
-
-  <script src="script.js"></script>
 </body>
-  <script>
-   let c = document.getElementById('canvas')
-let $ = c.getContext('2d')
 
-let col = function (x, y, r, g, b) {
-    $.fillStyle = "rgb(" + r + ", " + g + "," + b + " )"
-    $.fillRect(x, y, 1, 1)
-}
-
-let R = function (x, y, t) {
-    return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t)))
-}
-
-let G = function (x, y, t) {
-    return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)))
-}
-
-let B = function (x, y, t) {
-    return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(t / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) /1100)))
-}
-
-let t = 0 
-
-let run = function() {
-    for ( x = 0; x <= 35; x++) {
-        for (y = 0; y<= 35; y++) {
-            col(x, y, R(x, y, t), G(x, y, t), B(x, y,t))
-        }
-    }
-    t=t+0.080
-    window.requestAnimationFrame(run)
-}
-
-run()
-
-function changeImage(){
-    document.getElementById("ser1").className = "energy";
-
-}
-    </script>
 
 
 </html>
