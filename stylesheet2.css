@@ -22,6 +22,13 @@ body {
     background-size: cover;
   }
 
+  .bgimage2 {
+    background-image: url("img/bgContenido.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
 canvas {
     position: fixed;
     width: 100%;
@@ -96,13 +103,13 @@ canvas {
 
 .item4{
     position: relative;
-    top: 4%;
-    right: 10%;
+    top: 7%;
+    right: 8%;
 }
 
 .item5{
     position: relative;
-    top: 20%;
+    top: 40%;
     right: 5%;
 }
 
@@ -115,7 +122,7 @@ canvas {
 .item7{
     position: relative;
     top: 25%;
-    right: 15%;
+    right: 22%;
 }
 
 .item8{
@@ -127,7 +134,7 @@ canvas {
 .item9{
     position: relative;
     top: 8%;
-    left: 15%;
+    left: 8%;
 }
 
 .item10{
@@ -153,6 +160,21 @@ canvas {
     top: 10%;
     right: 2%;
 }
+
+.item14{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+
+.item15{
+    position: absolute;
+    top: 35%;
+    right: 20%;
+}
+
+
 
   .contentBottom {
     position: fixed;
@@ -210,22 +232,23 @@ canvas {
 }
 
 
-
 .sphere {
-    width: 300px;
-    height: 300px;
-    border: 7px solid #fff;
+    width: 150px;
+    height: 150px;
+    border: 7px dotted #EDC9A6;
     border-radius: 50%;
     animation: spin 15s linear infinite;
-    position: relative;
+    position: absolute;
+    right: 20%;
+    bottom: 0%;
     transform-style: preserve-3d;
     -ms-transform-style:none;
 }
 
 .sphere::before, .sphere::after{
-    width: 300px;
-    height: 300px;
-    border: 7px solid #fff;
+    width: 150px;
+    height: 150px;
+    border: 7px dotted #EDC9A6;
     border-radius: 50%;
     content: "";
     left: 0;
@@ -239,6 +262,15 @@ canvas {
 
 .sphere::after {
     transform: rotateX(66.6deg);
+}
+
+.butterfly {
+    width: 150px;
+    height: 150px;
+    background: url("img/mariposa.gif");
+    position: absolute;
+    top: 20%;
+
 }
 
 @keyframes spin {
@@ -255,7 +287,6 @@ canvas {
     background: url("img/ser.png") no-repeat;
     cursor: pointer;
   }
-
 
   .compreya {
     position: absolute;
